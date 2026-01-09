@@ -2,6 +2,7 @@ package com.crudBackEnd.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ import com.crudBackEnd.repository.UserRepository;
 public class UserController {
 
 
-	
+	 @Autowired
 	private final UserRepository repo;
 
 	public UserController(UserRepository repo) {
